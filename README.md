@@ -1,6 +1,8 @@
 # <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3247810/perl-icon-md.png" alt="perlicon" style="width:70px;"/> gpubios-rewrite-vfio
 This script automatically rewrites your GPU bios to increment it to your VFIO driver.
 
+## :warning: Only for Nvidia bios :warning:
+
 1. Render the executable with the command:
 ```bash
 chmod +x gpu_bios_vfio.pl
