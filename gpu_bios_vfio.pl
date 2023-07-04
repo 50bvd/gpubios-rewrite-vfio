@@ -5,15 +5,12 @@ use warnings;
 print "Enter romfile name: ";
 my $filename = <>;
 chomp $filename; 
-
 #read file
 open my $fh, '<', $filename or die "Can't open file $!";
 my $file_content = do { local $/; <$fh> };
 close $fh;
-
 #find last carac U before carac chain VIDEO
 my $index = rindex($file_content, 'U', index($file_content, 'VIDEO'));
-
 #if u found before video
 if($index != -1) {
     #delete all before u
